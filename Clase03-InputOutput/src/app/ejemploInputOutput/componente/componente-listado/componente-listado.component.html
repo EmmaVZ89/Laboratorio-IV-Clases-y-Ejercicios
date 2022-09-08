@@ -1,0 +1,8 @@
+<p>componente-listado works!</p>
+<ul *ngFor="let producto of listadoRecibido">
+  <li>
+    Precio: {{ producto.precio }}, Marca: {{ producto.marca }}, Stock:
+    {{ producto.stock }}
+    <button class="btn btn-info" (click)="SeleccionarProducto(producto)">Seleccionar</button>
+  </li>
+</ul>
