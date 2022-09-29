@@ -1,0 +1,17 @@
+
+<img [src]="bandera" >
+
+<!-- <div *ngFor="let bandera of misBanderas ">
+
+    {{bandera.name.common}}
+
+
+</div> -->
+
+<div *ngFor="let bandera of misPaises | async ">
+
+    <input type="button" [value]="bandera.name.common"
+    (click)="buscarPais(bandera.name.common)"> 
+
+
+</div>
